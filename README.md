@@ -1,9 +1,9 @@
-# 🧾 TaxFilter – Smart Income Tax Calculator
+![Screenshot (53)](https://github.com/user-attachments/assets/9d881514-f145-423c-9211-c42cbdb37f90)# 🧾 TaxFilter – Smart Income Tax Calculator
 
 **TaxFilter** is an interactive, responsive, and user-friendly tax calculation website that helps users calculate their income tax based on provided financial details. It features a sleek blue-themed interface and offers multiple options to view, download, or receive tax summaries via email.
 
-🔗 [Visit TaxFilter](https://aarthi-taxcalculation-website.netlify.app/)
-🔗 [Latest Version](https://aarthi-income-taxcalculator.netlify.app/)
+🔗 [Visit TaxFilter](https://taxfilter.netlify.app/)
+🔗 [Latest Version](https://taxfilter-lfsw.onrender.com)
 
 ---
 
@@ -65,21 +65,28 @@ Upon submission:
 * 🔐 **Google Sheets Integration** – Alternate method for storing login details
 * 🖨️ **Formatted PDF Output** – Includes income breakdown, user details, QR code, footer
 
+
 ---
 
 ## 📸 Screenshots
 
-![Screenshot (55)](https://github.com/user-attachments/assets/2097b856-a0aa-4a22-a487-23f1215056b4)
-![Screenshot (57)](https://github.com/user-attachments/assets/b5f013f9-c4bc-40fd-833e-f1e911b73da8)
-![Screenshot (58)](https://github.com/user-attachments/assets/b6e6a7d5-b84e-451a-bed8-35a98d8ff6be)
-![Screenshot (59)](https://github.com/user-attachments/assets/907b014c-ff4e-4f02-b570-7f8931ed1e83)
 
-📄 [Download Sample Tax Summary PDF](https://github.com/user-attachments/files/20968758/aarthi_Tax_Summary.30.pdf)
 
----
+--![Screenshot (53)](https://github.com/user-attachments/assets/276b45f7-e84b-4ae9-b51c-544927a71ab8)
+![Screenshot (54)](https://github.com/user-attachments/assets/5d8d0402-6c4e-4e59-b1c2-62a28daf8193)
+![Screenshot (55)](https://github.com/user-attachments/assets/3639f33e-da70-4876-923e-ca3b56772abd)
+![image](https://github.com/user-attachments/assets/ad428576-635a-4893-ac6f-b8189dcb9c5b)
+![image](https://github.com/user-attachments/assets/b6156121-ccf5-420a-81ef-5e85f7d6e0f0)
+![image](https://github.com/user-attachments/assets/8d96f20c-cff6-43b1-b044-d9acf9293d13)
+![image](https://github.com/user-attachments/assets/53344bdd-e061-4209-9cb6-ebe0beb155d1)
+
+
+[Aarthi.A_Tax_Summary.pdf](https://github.com/user-attachments/files/21087950/Aarthi.A_Tax_Summary.pdf)
+
+
+
 
 ## 🔮 Future Enhancements
-
 * Add tax comparison reports
 * Support multiple tax years
 * Implement graphical tax analytics
