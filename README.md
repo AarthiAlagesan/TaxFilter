@@ -1,4 +1,4 @@
-![Screenshot (53)](https://github.com/user-attachments/assets/9d881514-f145-423c-9211-c42cbdb37f90)# 🧾 TaxFilter – Smart Income Tax Calculator
+# 🧾 TaxFilter – Smart Income Tax Calculator
 
 **TaxFilter** is an interactive, responsive, and user-friendly tax calculation website that helps users calculate their income tax based on provided financial details. It features a sleek blue-themed interface and offers multiple options to view, download, or receive tax summaries via email.
 
@@ -73,11 +73,15 @@ Upon submission:
 
 
 --![Screenshot (53)](https://github.com/user-attachments/assets/276b45f7-e84b-4ae9-b51c-544927a71ab8)
+
 ![Screenshot (54)](https://github.com/user-attachments/assets/5d8d0402-6c4e-4e59-b1c2-62a28daf8193)
-![Screenshot (55)](https://github.com/user-attachments/assets/3639f33e-da70-4876-923e-ca3b56772abd)
+
 ![image](https://github.com/user-attachments/assets/ad428576-635a-4893-ac6f-b8189dcb9c5b)
+
 ![image](https://github.com/user-attachments/assets/b6156121-ccf5-420a-81ef-5e85f7d6e0f0)
+
 ![image](https://github.com/user-attachments/assets/8d96f20c-cff6-43b1-b044-d9acf9293d13)
+
 ![image](https://github.com/user-attachments/assets/53344bdd-e061-4209-9cb6-ebe0beb155d1)
 
 
