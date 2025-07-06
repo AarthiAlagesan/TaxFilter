@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-container glassmorphism">
+            <h1>Income Tax Calculator (2024 - New Regime)</h1>
+
+            <form id="taxForm">
+                <!-- First Row: Name, Email, Phone -->
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                </div>
+
+                <!-- Second Row: Salary, House Property, Other Sources -->
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="salary">Salary (₹):</label>
+                        <input type="number" id="salary" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="houseProperty">House Property (₹):</label>
+                        <input type="number" id="houseProperty" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="otherSources">Other Sources (₹):</label>
+                        <input type="number" id="otherSources" required>
+                    </div>
+                </div>
+
+                <!-- Third Row: Calculate Button -->
+                <div class="input-row">
+                    <button type="submit" class="btn-primary">Calculate Tax</button>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- Modal for Tax Calculation Result -->
+<div id="resultModal" class="modal">
+    <div class="modal-content">
+        <h2>Tax Payable Result</h2>
+        <p><strong>Name:</strong> <span id="modalName"></span></p>
+        <p><strong>Phone:</strong> <span id="modalPhone"></span></p>
+        <p><strong>Email:</strong> <span id="modalEmail"></span></p> <!-- Added email field -->
+        <p><strong>Salary:</strong> ₹<span id="modalSalary"></span></p>
+        <p><strong>House Property:</strong> ₹<span id="modalHouseProperty"></span></p>
+        <p><strong>Other Sources:</strong> ₹<span id="modalOtherSources"></span></p>
+        <h3>Tax Payable: ₹<span id="modalTaxAmount"></span></h3>
+        <button id="closeModal" class="btn-close">Close</button>
+        <button id="sendButton" class="btn-secondary">Send</button>
+        <button id="downloadPdf" class="btn-download">Download PDF</button>
+
+
+    </div>
+</div>
+
+        
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

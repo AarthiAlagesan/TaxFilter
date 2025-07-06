@@ -1,0 +1,574 @@
+/* Navbar Styles */
+nav {
+    background-color: #002D72;
+    padding: 20px 40px; /* Increase padding for larger navbar */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo styles */
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/* Navbar items */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1; /* Take up remaining space */
+    justify-content: center; /* Center items */
+}
+
+nav ul li {
+    margin: 0 15px; /* Adjust spacing between items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* Adjust font size */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav button {
+    background-color: white;
+    color: #007BFF;
+    border: none;
+    padding: 12px 24px; /* Adjust padding for larger button */
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute; /* Absolute positioning for the button */
+    right: 20px; /* Keep in place */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Mobile menu icon styles */
+.nav-menu-icon {
+    display: none; /* Hidden by default */
+}
+
+.nav-menu-icon img {
+    width: 30px; /* Adjust size */
+    height: auto;
+    cursor: pointer;
+}
+
+/* Mobile menu styles */
+nav .mobile-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 60px; /* Position below the navbar */
+    right: 0;
+    background: #002D72;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+nav .mobile-menu ul li {
+    margin: 10px 0;
+}
+
+nav .mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .mobile-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Show mobile menu when the icon is clicked */
+.nav-menu-icon.active + .mobile-menu {
+    display: block;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide default menu items */
+    }
+
+    .nav-menu-icon {
+        display: block; /* Show menu icon on mobile */
+    }
+}
+/* Header Styles */
+header {
+    background-color:#002D72;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+header button {
+    margin-top: 20px;
+}
+/* Button Styles from Uiverse.io by JaydipPrajapati1910 */
+.cssbuttons-io-button {
+    background: #0000FF;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #0000FF;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    justify-content: center; /* Center the button */
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #0000FF;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #0000FF;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+/* Section Styles */
+section#how-it-works {
+    padding: 20px 10px;
+    background: linear-gradient(135deg, #002D72,#265eb3); /* Gradient background */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top:10px;
+}
+
+section#how-it-works h2 {
+    font-size: 2.5em;
+    color:white;
+    margin-bottom: 40px;
+    position: relative;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Steps Container */
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Increase space between steps */
+    position: relative;
+}
+
+/* Step Styles */
+.step {
+    background-color: rgba(255, 255, 255, 0.9); /* Glassmorphism effect */
+    padding: 30px; /* Increase padding for larger box */
+    border-radius: 15px; /* Adjust border radius for larger box */
+    width: 320px; /* Increase width for larger box */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+    position: relative;
+    z-index: 1; /* Ensure steps are above any potential pseudo-elements */
+}
+
+/* Step Icon Styles */
+.step-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adjust margin for larger icon space */
+}
+
+.step-icon img {
+    width: 150px; /* Increase icon size */
+    height: auto;
+    animation: bounce 1s infinite;
+}
+
+/* Step Hover Effect */
+.step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Step Text Styles */
+.step h3 {
+    color: #002D72;
+    margin: 15px 0; /* Adjust margin for larger text spacing */
+    font-size: 1.5em; /* Increase font size for larger text */
+}
+
+.step p {
+    color: black;
+    font-size: 1.1em; /* Increase font size for larger text */
+    line-height: 1.5;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Features Section Styles */
+#features {
+    padding: 60px 20px;
+    background: #f9f9f9; /* Light background color */
+    text-align: center;
+    position: relative;
+}
+
+#features h2 {
+    font-size: 2.5em;
+    color: #002D72;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between features */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for features */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Fixed width for consistent layout */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.feature:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.feature:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.feature:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.feature-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.feature-icon img {
+    width: 60px; /* Adjust icon size */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.feature h3 {
+    color: #002D72;
+    margin: 10px 0;
+    font-size: 1.5em; /* Feature title font size */
+}
+
+.feature p {
+    color: #555;
+    font-size: 1em; /* Feature description font size */
+    line-height: 1.6;
+}
+
+/* Hover Effect */
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    background-color: #e0f0ff; /* Light blue background on hover */
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.bg-blue-100 {
+    background-color: #ebf8ff; /* light blue */
+}
+
+.dark\:bg-blue-800 {
+    background-color: #2a4365; /* dark blue */
+}
+
+.text-blue-500 {
+    color: #4299e1; /* medium blue */
+}
+
+.dark\:text-blue-400 {
+    color: #63b3ed; /* light blue */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* hide scrollbar */
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;     /* IE and Edge */
+    scrollbar-width: none;        /* Firefox */
+    overflow: auto;               /* Make sure scroll is enabled */
+}
+
+/* For Chrome, Safari, Edge */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Call-to-Action Section Styles */
+#cta {
+    padding: 60px 20px;
+    background: #002D72; /* Blue background */
+    color: #ffffff; /* White text */
+    text-align: center;
+}
+
+#cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+#cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button.primary {
+    background: #003B6F; /* Darker blue for primary CTA */
+}
+
+.cta-button.secondary {
+    background: #0052CC; /* Lighter blue for secondary CTA */
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+.cta-button:active {
+    transform: scale(0.95);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Footer Background and Text Colors */
+.bg-darkblue {
+    background-color: #002D72; /* Dark blue background color */
+   
+}
+
+.text-foreground {
+    color: #F8F9FA; /* Light foreground text color for readability */
+}
+
+.text-muted {
+    color: #6C757D; /* Muted text color for less emphasis */
+}
+
+.text-muted-foreground {
+    color: #E9ECEF; /* Lighter muted text color for hover effects */
+}
+
+/* Footer Container */
+.py-8 {
+    padding-top: 2rem; /* Padding on top */
+    padding-bottom: 2rem; /* Padding on bottom */
+}
+
+.container {
+    max-width: 1140px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    margin-top: 10px;
+}
+
+.grid {
+    display: grid; /* Use grid layout */
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr); /* Single column grid */
+}
+
+.md:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr); /* Four column grid on medium screens and up */
+}
+
+.gap-8 {
+    gap: 2rem; /* Gap between grid items */
+}
+
+/* Footer Section Headings */
+.font-bold {
+    font-weight: 700; /* Bold font weight */
+}
+
+.mb-4 {
+    margin-bottom: 1rem; /* Margin bottom for spacing */
+}
+
+.space-y-2 > * + * {
+    margin-top: 0.5rem; /* Space between list items */
+}
+
+/* Footer Links */
+a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Footer Text Center */
+.text-center {
+    text-align: center; /* Center text alignment */
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .md\:grid-cols-4 {
+        grid-template-columns: repeat(4, 1fr); /* Responsive grid columns */
+    }
+}

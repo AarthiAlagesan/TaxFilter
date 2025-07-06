@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional CSS for the contact page */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7f6;
+            margin: 0;
+            padding: 0;
+        }
+
+       /* Navbar Styles */
+nav {
+    background-color: #002D72;
+    padding: 20px 40px; /* Increase padding for larger navbar */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo styles */
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/* Navbar items */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1; /* Take up remaining space */
+    justify-content: center; /* Center items */
+}
+
+nav ul li {
+    margin: 0 15px; /* Adjust spacing between items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* Adjust font size */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+        /* Contact container styles */
+        .contact-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.8s ease-out;
+        }
+
+        .contact-container h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #002D72;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .contact-container p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .contact-container address {
+            margin-bottom: 20px;
+        }
+
+        .contact-container address p {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .contact-container a {
+            color: #002D72;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-container a:hover {
+            color: #003B6F;
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">TaxFiler</a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="tax-calculation.html">Tax Calculation</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </nav>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, please contact the income tax department using the information below:</p>
+
+        <address>
+            <p><strong>Income Tax Department</strong></p>
+            <p>123 Tax Avenue</p>
+            <p>Cityville, ST 12345</p>
+            <p>Country</p>
+            <p><strong>Phone:</strong> +1-234-567-8900</p>
+            <p><strong>Email:</strong> <a href="mailto:taxfiler24@gmail.com">taxfiler24@gmail.com</a></p>
+        </address>
+        
+       <p>
+  For more information, you can also visit the official website:
+  <a href="https://www.taxdepartment.gov" target="_blank" rel="noopener">
+    www.taxdepartment.gov
+  </a>
+</p>
+
+    </div>
+</body>
+</html>

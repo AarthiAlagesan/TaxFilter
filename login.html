@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Tax Filing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS for the background image */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('taxphoto.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* CSS for the login container */
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            color: #002D72;
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-container button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .login-container a {
+            color: #007BFF;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwXevvCDmoY4qoea8zeC1-4SgJdInjVbCt8AUHzwRtwt7KY67p49k9HHnSooGkcD93C/exec'; // Replace with your Apps Script web app URL
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('loginForm').addEventListener('submit', async function(event) {
+                event.preventDefault(); // Prevent the form from submitting
+
+                // Get form values
+                const username = document.getElementById('username').value;
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                // Create the payload to send
+                const formData = new URLSearchParams();
+                formData.append('username', username);
+                formData.append('email', email);
+                formData.append('password', password);
+
+                try {
+                    const response = await fetch(scriptURL, {
+                        method: 'POST',
+                        body: formData
+                    });
+                    const result = await response.json();
+
+                    if (result.result === 'success') {
+                        alert("Successfully Logged In!");
+                        // Optionally, redirect to another page after success
+                        // window.location.href = "dashboard.html"; // Replace with your target URL
+                    } else {
+                        alert("Error: " + result.error);
+                    }
+                } catch (error) {
+                    alert("There was an error logging in: " + error.message);
+                }
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">TaxFiler</a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="public\index.html">Tax Calculation</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+           
+            <button type="submit">Login</button>
+        </form>
+        <a href="index.html">Back to Home</a>
+    </div>
+    
+    
+</body>
+</html>
